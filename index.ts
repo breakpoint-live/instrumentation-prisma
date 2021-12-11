@@ -165,7 +165,6 @@ export class PrismaInstrumentation implements Instrumentation {
       let context = this._context
       const startTime = e.timestamp
       const endTime = new Date(startTime.valueOf() + Number(e.duration)) // This is in ms, so, not all that precise
-      console.info(`duration: ${e.duration} endTime: ${endTime}  startTime: ${startTime}  duration: ${endTime.valueOf()-startTime.valueOf()} `)
       var span
       try {
         const op = this._getOperationFromQuery(e.query)
