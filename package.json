@@ -1,0 +1,37 @@
+{
+  "name": "instrumentation-prisma",
+  "version": "0.0.1",
+  "description": "Opentelemetry instrumentation for Prisma ORM",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breakpoint-live/instrumentation-prisma.git"
+  },
+  "keywords": [
+    "opentelemetry",
+    "Prisma"
+  ],
+  "author": "Jake Page",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/breakpoint-live/instrumentation-prisma/issues"
+  },
+  "homepage": "https://github.com/breakpoint-live/instrumentation-prisma#readme",
+  "peerDependencies": {
+    "@opentelemetry/api": "^1.0.2"
+  },
+  "devDependencies": {
+    "@opentelemetry/api": "^1.0.2",
+    "@prisma/client": "^3.6.0",
+    "@types/node": "^16.11.12",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "@opentelemetry/instrumentation": "^0.27.0",
+    "@opentelemetry/semantic-conventions": "^1.0.1",
+    "pg-connection-string": "^2.5.0"
+  }
+}

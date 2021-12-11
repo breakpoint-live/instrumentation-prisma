@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "sourceMap": true,
+    "lib": ["esnext"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
